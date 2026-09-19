@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState, createContext, useContext } from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, Link, NavLink, Route, Routes, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { BrowserRouter, Link, NavLink, Route, Routes, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ArrowRight, CalendarDays, Check, ChevronRight, Clock3, Footprints, Leaf, MapPin, Menu, Minus, Moon, Mountain, Plus, Search, Sparkles, TreePine, Users, X } from 'lucide-react';
 import './styles.css';
 
@@ -389,4 +389,4 @@ function Footer({light=false}){
 }
 function App(){return <LanguageProvider><Layout/></LanguageProvider>}
 
-ReactDOM.createRoot(document.getElementById('root')).render(<HashRouter><App/></HashRouter>);
+ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><App/></BrowserRouter>);
